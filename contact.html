@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Central Manor</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf5;
+      color: #5c0000;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .site-header {
+      background-color: #fff;
+      padding: 20px 0;
+      border-bottom: 2px solid #5c0000;
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #5c0000;
+      transition: 0.3s;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #a60000;
+    }
+
+    main {
+      padding: 40px 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      margin-top: 15px;
+      background-color: #5c0000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-info {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 1rem;
+      color: #804040;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Central Manor Logo" />
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="bakery.html">Bakery</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <section class="contact-form">
+      <form action="submit-contact.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <div class="contact-info">
+      <p>📍 3667 Blue Rock Road Rd, Lancaster, PA</p>
+      <p>📞 (717) 872-8211</p>
+    </div>
+  </main>
+
+</body>
+</html>

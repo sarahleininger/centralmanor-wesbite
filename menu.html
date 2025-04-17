@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Menu - Central Manor</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf5;
+      color: #5c0000;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .site-header {
+      background-color: #fff;
+      padding: 20px 0;
+      border-bottom: 2px solid #5c0000;
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #5c0000;
+      transition: 0.3s;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #a60000;
+    }
+
+    main {
+      padding: 40px 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .menu-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .menu-images img {
+      width: 100%;
+      max-width: 700px;
+      border: 2px solid #5c0000;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Central Manor Logo" />
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="bakery.html">Bakery</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Our Full Menu</h1>
+    <div class="menu-images">
+      <img src="images/menu1.png" alt="Menu Page 1">
+      <img src="images/menu2.png" alt="Menu Page 2">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <p><strong>Central Manor Bakery & Grille</strong></p>
+    <p>📍 3667 Blue Rock Rd, Lancaster, PA</p>
+    <p>📞 (717) 872-8211</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+
