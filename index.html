@@ -5,180 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Central Manor Bakery & Grille</title>
   <link rel="stylesheet" href="style.css"/>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fffaf5;
-      color: #5c0000;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .site-header {
-      background-color: #fff;
-      padding: 20px 0;
-      border-bottom: 2px solid #5c0000;
-    }
-
-    .site-header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 60px;
-    }
-
-    .nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 600;
-      color: #5c0000;
-      transition: 0.3s;
-    }
-
-    .nav a:hover {
-      color: #a60000;
-    }
-
-    .hero {
-      background-color: #fdf0e7;
-      padding: 60px 0;
-    }
-
-    .hero-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .hero-text {
-      flex: 1 1 45%;
-    }
-
-    .hero-text h1 {
-      font-size: 3.2rem;
-      margin-bottom: 15px;
-      color: #5c0000;
-    }
-
-    .hero-text p {
-      font-size: 1.2rem;
-      color: #804040;
-    }
-
-    .hero-image {
-      flex: 1 1 45%;
-      display: flex;
-      justify-content: center;
-    }
-
-    .hero-image img {
-      max-width: 100%;
-      border-radius: 16px;
-      border: 3px solid #5c0000;
-    }
-
-    .specials {
-      padding: 40px 0;
-    }
-
-    .section-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-
-    .section-header h2 {
-      font-size: 2rem;
-      color: #5c0000;
-    }
-
-    .show-more {
-      text-decoration: none;
-      color: #5c0000;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    .specials-grid {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .special-card {
-      flex: 1 1 calc(25% - 20px);
-      background-color: #fff;
-      padding: 10px;
-      border: 2px solid #5c0000;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .special-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    .special-card h3 {
-      font-size: 1rem;
-      color: #5c0000;
-    }
-
-    .menu-section ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .menu-section li {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-
-    .order-form label {
-      display: block;
-      margin: 15px 0 5px;
-    }
-
-    .order-form input,
-    .order-form textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .order-form button {
-      margin-top: 15px;
-      background-color: #5c0000;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
 
- 
   <header class="site-header">
     <div class="container">
       <div class="logo">
@@ -188,8 +17,7 @@
         <a href="index.html">Home</a>
         <a href="bakery.html">Bakery</a>
         <a href="menu.html">Menu</a>
-        <a href="menu.html">Contact</a>
-
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -199,7 +27,6 @@
       <div class="hero-text">
         <h1>Central Manor Bakery & Grille</h1>
         <p>Freshly baked, daily made — just like home.</p>
-        
       </div>
       <div class="hero-image">
         <img src="images/logo.png" alt="Fresh bakery image">
@@ -207,62 +34,55 @@
     </div>
   </section>
 
-
-
-
-<section class="specials">
-  <div class="container">
-    <div class="section-header">
-      <h2>Specials</h2>
-    </div>
-    <div class="specials-grid">
-      <div class="special-card">
-        <img src="images/croquettes.jpg" alt="Chicken Croquettes">
-        <h3>Chicken Croquettes</h3>
+  <section class="specials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Specials</h2>
       </div>
-      <div class="special-card">
-        <img src="images/turkey.jpg" alt="Turkey & Fillin’">
-        <h3>Turkey & Fillin’</h3>
-      </div>
-      <div class="special-card">
-        <img src="images/waffles.jpg" alt="Chicken & Waffles">
-        <h3>Chicken & Waffles</h3>
-      </div>
-      <div class="special-card">
-        <img src="images/pork.jpg" alt="Pork & Fillin’">
-        <h3>Pork & Fillin’</h3>
+      <div class="specials-grid">
+        <div class="special-card">
+          <img src="images/croquettes.jpg" alt="Chicken Croquettes">
+          <h3>Chicken Croquettes</h3>
+        </div>
+        <div class="special-card">
+          <img src="images/turkey.jpg" alt="Turkey & Fillin’">
+          <h3>Turkey & Fillin’</h3>
+        </div>
+        <div class="special-card">
+          <img src="images/waffles.jpg" alt="Chicken & Waffles">
+          <h3>Chicken & Waffles</h3>
+        </div>
+        <div class="special-card">
+          <img src="images/pork.jpg" alt="Pork & Fillin’">
+          <h3>Pork & Fillin’</h3>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <section class="pretty-hours">
-  <div class="container">
-    <h2 class="hours-heading">We’re Open & Baking Fresh Daily!</h2>
-    <div class="hours-display">
-      <div class="day-block">
-        <span class="day">Monday – Thursday</span>
-        <span class="time">7:00 AM – 6:00 PM</span>
-      </div>
-      <div class="day-block">
-        <span class="day">Friday</span>
-        <span class="time">7:00 AM – 4:00 PM</span>
+    <div class="container">
+      <h2 class="hours-heading">We’re Open & Baking Fresh Daily!</h2>
+      <div class="hours-display">
+        <div class="day-block">
+          <span class="day">Tuesday – Thursday</span>
+          <span class="time">7:00 AM – 6:00 PM</span>
+        </div>
+        <div class="day-block">
+          <span class="day">Friday</span>
+          <span class="time">7:00 AM – 4:00 PM</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <footer class="site-footer">
-  <div class="container">
-    <p><strong>Central Manor Bakery & Grille</strong></p>
-    <p>📍 3667 Blue Rock Rd, Lancaster, PA</p>
-    <p>📞 (717) 872-8211</p>
-  </div>
-</footer>
-
-
+    <div class="container">
+      <p><strong>Central Manor Bakery & Grille</strong></p>
+      <p>📍 3667 Blue Rock Rd, Lancaster, PA</p>
+      <p>📞 (717) 872-8211</p>
+    </div>
+  </footer>
 
 </body>
 </html>
